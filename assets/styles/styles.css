@@ -60,7 +60,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0 var(--row-padding) * -1;
+    margin: 0 calc(var(--row-padding) * -1);
 }
 
 @media (max-width: 920px) {
@@ -885,7 +885,7 @@ body {
 
 @media (max-width: 920px) {
     .appointment__inner {
-        background: var(--bg-color-dark) center 75% / 312px no-repeat url(../images/map.png);
+        background: var(--bg-color-dark) center 85% / 312px no-repeat url(../images/map.png);
         padding: 125px 40px 360px;
     }
 }
@@ -937,7 +937,7 @@ body {
 
 @media (max-width: 920px) {
     .form__wrap {
-        margin-top: 350px;
+        margin-top: 260px;
         padding: 0;
         position: static;
         width: 100%;
@@ -995,7 +995,7 @@ body {
 
 @media (max-width: 920px) {
     .form::after {
-        max-height: 350px;
+        max-height: 260px;
         max-width: 610px;
         background-image: url('../images/form-image-mob.png');
         background-size: cover;
@@ -1061,8 +1061,14 @@ body {
 
 /* =================    FOOTER   ================    */
 
+@media (max-width: 920px) {
+    .container__footer {
+        padding: 0 80px;
+    }
+}
+
 .footer {
-    flex-shrink: 0;
+    background-color: var(--bg-color);
 }
 
 .footer__callback {
@@ -1098,12 +1104,14 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
+    letter-spacing: -0.05em;
 }
 
 .callback__descr {
     text-align: left;
     margin: 0;
-    color: var(--text-second-color)
+    color: var(--text-second-color);
+    letter-spacing: 0.1em;
 }
 
 .callback__button {
@@ -1125,7 +1133,7 @@ body {
 @media (max-width: 920px) {
     .footer__wrap {
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         padding-bottom: 50px;
     }
 }
@@ -1138,6 +1146,12 @@ body {
     margin: 0 var(--row-padding) 30px;
     min-width: 164px;
     width: calc(100% / 8 * 2 - var(--row-padding) * 2);
+}
+
+@media (max-width: 920px) {
+    .footer__category {
+        width: calc(100% / 12 * 12 - var(--row-padding) * 2);
+    }
 }
 
 .footer__title {
@@ -1221,6 +1235,7 @@ body {
 @media (max-width: 920px) {
     .footer__bottom {
         flex-direction: column;
+        align-items: start;
     }
 }
 
@@ -1246,6 +1261,7 @@ body {
 
 @media (max-width: 920px) {
     .footer__socials {
+        justify-content: start;
         grid-template-columns: repeat(4, 1fr);
     }
 }
