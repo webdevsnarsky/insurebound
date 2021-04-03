@@ -1017,6 +1017,27 @@ body {
     line-height: 32px;
 }
 
+@media (max-width: 920px) {
+    .form__title {
+        display: none;
+    }
+
+}
+
+.form__title-mobile {
+    display: none;
+}
+
+@media (max-width: 920px) {
+    .form__title-mobile {
+        display: block;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 57px;
+    }
+
+}
+
 .form__label {
     margin-bottom: 10px;
     font-weight: 600;
