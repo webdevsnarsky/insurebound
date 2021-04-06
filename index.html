@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insurebond</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/styles/fonts.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
@@ -116,7 +118,7 @@
                 <h2 class="industry__title">Industry</h2>
                 <p class="industry__descr descr">Problems trying to resolve the conflict between 
                     the two major realms of Classical physics: Newtonian mechanics</p>
-                <div class="row">
+                <!-- <div class="row">
                         <div class="industry__wrapper">
                             <div class="industry__cart cart">
                                 <img src="./assets/images/industry/user-1.png" alt="user-1" class="cart__image">
@@ -160,6 +162,69 @@
                                 </div>
                             </div>
                         </div>
+                </div> -->
+
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="industry__wrapper">
+                                <div class="industry__cart cart">
+                                    <img src="./assets/images/industry/user-1.png" alt="user-1" class="cart__image">
+                                    <p class="cart__review">Slate helps you see how many more days you need 
+                                    to work to reach your financial goal for the month and year.</p>
+                                    <div class="cart__stars">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/empty-star.svg" alt="empty-star" class="cart__star">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="industry__wrapper">
+                                <div class="industry__cart cart">
+                                    <img src="./assets/images/industry/user-2.png" alt="user-2" class="cart__image">
+                                    <p class="cart__review">Slate helps you see how many more days you need 
+                                        to work to reach your financial goal for the month and year.</p>
+                                    <div class="cart__stars">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/empty-star.svg" alt="empty-star" class="cart__star">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="industry__wrapper">
+                                <div class="industry__cart cart">
+                                    <img src="./assets/images/industry/user-3.png" alt="user-3" class="cart__image">
+                                    <p class="cart__review">Slate helps you see how many more days you need 
+                                        to work to reach your financial goal for the month and year.</p>
+                                    <div class="cart__stars">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
+                                        <img src="./assets/images/icons/empty-star.svg" alt="empty-star" class="cart__star">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </div>
         </section>
@@ -428,6 +493,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
