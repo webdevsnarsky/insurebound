@@ -1303,17 +1303,16 @@ body {
 
 .footer__wrap {
     padding: 50px 0 20px;
-    display: flex;
 }
 
 @media (max-width: 920px) {
     .footer__wrap {
         padding: 0 40px 50px;
-        flex-direction: column;
     }
 }
 
 .footer__categories {
+    display: flex;
     width: 100%;
 }
 
