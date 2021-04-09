@@ -747,10 +747,6 @@ input[type="submit"] {
     display: block;
 }
 
-.subscribe {
-    margin: 20px 0;
-}
-
 @media (max-width: 920px) {
     .subscribe {
         background: linear-gradient(270deg, #D71489 -1.04%, #004788 100%);
