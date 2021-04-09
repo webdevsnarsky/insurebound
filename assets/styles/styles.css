@@ -1316,6 +1316,12 @@ body {
     width: 100%;
 }
 
+@media (max-width: 920px) {
+    .footer__categories {
+        flex-direction: column;
+    }
+}
+
 .footer__category {
     margin: 0 var(--row-padding) 30px;
     width: calc(100% / 12 * 2 - var(--row-padding) * 2);
