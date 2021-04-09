@@ -64,6 +64,10 @@ body {
     }
 }
 
+input[type="submit"] {
+-webkit-appearance: none;
+}
+
 .button {
     background-color: var(--primary-color);
     color: var(--text-color-light);
