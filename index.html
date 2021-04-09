@@ -5,55 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insurebond</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/styles/fonts.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
     <header class="header">
-        <div class="header__inner-bg">
-        <div class="container container-bg">
-            <div class="header__inner">
-                <div class="header__wrapper">
-                    <div class="header__wrap">
-                        <div class="header__logo logo">
-                            <a href="index.html" class="logo__link"><h3 class="logo__text">BrandName</h3></a>
-                        </div>
-                        <div class="header__icons icons">
-                            <a href="#" class="icons__link">
-                                <img src="./assets/images/icons/search.svg" alt="search" class="header__search icons">
-                            </a>
-                            <a href="#" class="icons__link">
-                                <img src="./assets/images/icons/shopping-cart.svg" alt="shop" class="header__shop icons">
-                            </a>
-                            <a href="#" class="icons__link">
-                                <img src="./assets/images/icons/burger.svg" alt="burger" class="icons-burger icons">
-                            </a>
-                        </div>
-                    </div>
-                    <nav class="header__nav">
-                        <ul class="header__menu">
-                            <li class="header__item"><a href="#" class="header__link">Home</a></li>
-                            <li class="header__item"><a href="#" class="header__link">Product</a></li>
-                            <li class="header__item"><a href="#" class="header__link">Pricing</a></li>
-                            <li class="header__item"><a href="#" class="header__link">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__buttons">
-                    <a href="#" class="header__button header__button-active">Login</a>
-                    <a href="#" class="header__button header__button-size header__button-arrow  button">Become a member</a>
-                </div>
-            </div>
-        </div>
             <div class="container">
-                <div class="header__promo promo">
+                <div class="header__inner">
+                    <div class="header__wrapper">
+                        <div class="header__wrap">
+                            <div class="header__logo logo">
+                                <a href="index.html" class="logo__link"><h3 class="logo__text">BrandName</h3></a>
+                            </div>
+                            <div class="header__icons icons">
+                                <a href="#" class="icons__link">
+                                    <img src="./assets/images/icons/search.svg" alt="search" class="header__search icons">
+                                </a>
+                                <a href="#" class="icons__link">
+                                    <img src="./assets/images/icons/shopping-cart.svg" alt="shop" class="header__shop icons">
+                                </a>
+                                <a href="#" class="icons__link">
+                                    <img src="./assets/images/icons/burger.svg" alt="burger" class="icons-burger icons">
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="header__nav">
+                            <ul class="header__menu">
+                                <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                                <li class="header__item"><a href="#" class="header__link">Product</a></li>
+                                <li class="header__item"><a href="#" class="header__link">Pricing</a></li>
+                                <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__buttons">
+                        <a href="#" class="header__link header__link_padding header__button-active">Login</a>
+                        <a href="#" class="header__button header__button-size header__button-arrow  button">Become a member</a>
+                    </div>
+                </div>
+            </div>   
+    </header>
+    <main class="main">
+        <section class="promo">
+            <div class="container">
+                <div class="promo__inner promo">
                     <h1 class="promo__title">We Ensure A Best Insurance Service</h1>
                     <p class="promo__subtitle">We know how large objects will act, but things on a 
                         small scale just do not act that way.</p>
                         <div class="promo__buttons">
-                            <a href="#" class="promo__button promo__button-active button">Get Quote Now</a>
+                            <a href="#" class="promo__button promo__button_active button">Get Quote Now</a>
                             <a href="#" class="promo__button button">Learn More</a>
                         </div>
                         <div class="promo__benefits benefits">
@@ -61,33 +62,30 @@
                                 <div class="benefits__item">
                                     <object data="./assets/images/icons/icon-header.svg" type="image/svg+xml" class="benefits__image"></object>
                                     <h3 class="benefits__title">Peace of Mind</h3>
-                                    <p class="benefits__descr descr">the quick fox jumps over the 
+                                    <p class="benefits__descr">the quick fox jumps over the 
                                         lazy dog</p>
                                 </div>
                                 <div class="benefits__item">
                                     <object data="./assets/images/icons/icon-header.svg" type="image/svg+xml" class="benefits__image"></object>
                                     <h3 class="benefits__title">Set For Life</h3>
-                                    <p class="benefits__descr descr">the quick fox jumps over the 
+                                    <p class="benefits__descr">the quick fox jumps over the 
                                         lazy dog</p>
                                 </div>
-                                <div class="benefits__item benefits__item-active">
+                                <div class="benefits__item benefits__item_active">
                                     <object data="./assets/images/icons/icon-header.svg" type="image/svg+xml" class="benefits__image"></object>
                                     <h3 class="benefits__title">100% Satisfaction</h3>
-                                    <p class="benefits__descr descr">the quick fox jumps over the 
+                                    <p class="benefits__descr">the quick fox jumps over the 
                                         lazy dog</p>
                                 </div>
                             </div>
                         </div>
                 </div>
             </div> 
-        </div>
-    </header>
-    <main class="main">
+        </section>
         <section class="features">
             <div class="container">
                 <div class="row">
                     <div class="features__item">
-                        <!-- <object data="./assets/images/icons/features/1.svg" type="image/svg+xml" class="features__image"></object> -->
                         <div class="feature__text">
                             <h5 class="features__title">Peace of Mind</h5>
                             <p class="features__descr descr">So it really behaves like neither. 
@@ -95,7 +93,6 @@
                         </div>
                     </div>
                     <div class="features__item">
-                        <!-- <object data="./assets/images/icons/features/2.svg" type="image/svg+xml" class="features__image"></object> -->
                         <div class="feature__text">
                             <h5 class="features__title">Set For Life</h5>
                             <p class="features__descr descr">They were used to create the 
@@ -103,7 +100,6 @@
                         </div>
                     </div>
                     <div class="features__item">
-                        <!-- <object data="./assets/images/icons/features/3.svg" type="image/svg+xml" class="features__image"></object> -->
                         <div class="feature__text">
                             <h5 class="features__title">100% Satisfaction</h5>
                             <p class="features__descr descr">So it really behaves like neither. 
@@ -118,113 +114,63 @@
                 <h2 class="industry__title">Industry</h2>
                 <p class="industry__descr descr">Problems trying to resolve the conflict between 
                     the two major realms of Classical physics: Newtonian mechanics</p>
-                <!-- <div class="row">
-                        <div class="industry__wrapper">
-                            <div class="industry__cart cart">
-                                <img src="./assets/images/industry/user-1.png" alt="user-1" class="cart__image">
-                                <p class="cart__review">Slate helps you see how many more days you need 
-                                to work to reach your financial goal for the month and year.</p>
-                                <div class="cart__stars">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/empty-star.svg" alt="empty-star" class="cart__star">
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="industry__wrapper">
-                            <div class="industry__cart cart">
-                                <img src="./assets/images/industry/user-2.png" alt="user-2" class="cart__image">
-                                <p class="cart__review">Slate helps you see how many more days you need 
-                                    to work to reach your financial goal for the month and year.</p>
-                                <div class="cart__stars">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/empty-star.svg" alt="empty-star" class="cart__star">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="industry__wrapper">
-                            <div class="industry__cart cart">
-                                <img src="./assets/images/industry/user-3.png" alt="user-3" class="cart__image">
-                                <p class="cart__review">Slate helps you see how many more days you need 
-                                    to work to reach your financial goal for the month and year.</p>
-                                <div class="cart__stars">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                    <img src="./assets/images/icons/empty-star.svg" alt="empty-star" class="cart__star">
-                                </div>
-                            </div>
-                        </div>
-                </div> -->
-
-                <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="industry__wrapper">
-                                <div class="industry__cart cart">
-                                    <img src="./assets/images/industry/user-1.png" alt="user-1" class="cart__image">
-                                    <p class="cart__review">Slate helps you see how many more days you need 
-                                    to work to reach your financial goal for the month and year.</p>
-                                    <div class="cart__stars">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/empty-star.svg" alt="empty-star" class="cart__star">
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="industry__wrapper">
-                                <div class="industry__cart cart">
-                                    <img src="./assets/images/industry/user-2.png" alt="user-2" class="cart__image">
-                                    <p class="cart__review">Slate helps you see how many more days you need 
-                                        to work to reach your financial goal for the month and year.</p>
-                                    <div class="cart__stars">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/empty-star.svg" alt="empty-star" class="cart__star">
+                <div class="industry__slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="industry__wrapper">
+                                        <div class="industry__cart cart">
+                                            <img src="./assets/images/industry/user-1.png" alt="user-1" class="cart__image">
+                                            <p class="cart__review">Slate helps you see how many more days you need 
+                                            to work to reach your financial goal for the month and year.</p>
+                                            <div class="cart__stars" data-mark="4">
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                            </div>
+                                            
+                                        </div>
                                     </div>
                                 </div>
-                            </div> 
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="industry__wrapper">
-                                <div class="industry__cart cart">
-                                    <img src="./assets/images/industry/user-3.png" alt="user-3" class="cart__image">
-                                    <p class="cart__review">Slate helps you see how many more days you need 
-                                        to work to reach your financial goal for the month and year.</p>
-                                    <div class="cart__stars">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/full-star.svg" alt="full-star" class="cart__star">
-                                        <img src="./assets/images/icons/empty-star.svg" alt="empty-star" class="cart__star">
+                                <div class="swiper-slide">
+                                    <div class="industry__wrapper">
+                                        <div class="industry__cart cart">
+                                            <img src="./assets/images/industry/user-2.png" alt="user-2" class="cart__image">
+                                            <p class="cart__review">Slate helps you see how many more days you need 
+                                                to work to reach your financial goal for the month and year.</p>
+                                            <div class="cart__stars"  data-mark="4">
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="industry__wrapper">
+                                        <div class="industry__cart cart">
+                                            <img src="./assets/images/industry/user-3.png" alt="user-3" class="cart__image">
+                                            <p class="cart__review">Slate helps you see how many more days you need 
+                                                to work to reach your financial goal for the month and year.</p>
+                                            <div class="cart__stars"  data-mark="4">
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                                <span class="cart__star"></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                    <!-- If we need scrollbar -->
-                    <!-- <div class="swiper-scrollbar"></div> -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -254,7 +200,7 @@
         </section>
 
         <section class="subscribe">
-            <div class="container container-padding">
+            <div class="container">
                 <div class="subscribe__inner">
                     <h3 class="subscribe__title">Subscribe For Latest Newsletter</h3>
                     <form action="POST" class="subscribe__form">
@@ -362,7 +308,7 @@
         </section>
         <section class="appointment">
             <div class="appointment__wrap">
-                <div class="container container-padding">
+                <div class="container container_padding">
                     <div class="appointment__inner">
                         <div class="appointment__text">
                             <h2 class="appointment__title">We Have Branches All Over The World</h2>
@@ -374,30 +320,42 @@
                         </div>
                     </div>
                     <div class="appointment__wrapper">
-                        <div class="form__wrap">
-                            <form action="POST" class="appointment__form form">
-                                <h2 class="form__title form__title-mobile">Get A Free Quote Here</h2>
-                                <h3 class="form__title">Book appointment</h3>
-                                <label for="name" class="form__label">Name *</label>
-                                <input type="text" id="name" class="form__input" placeholder="Full Name *">
-                                <label for="email" class="form__label">Email adress *</label>
-                                <input type="email" id="email" class="form__input" required placeholder="example@gmail.com">
-                                <label for="depart" class="form__label">Departement *</label>
-                                <select name="depart" id="depart" class="form__input">
-                                    <option class="form__option">Please Select</option>
-                                    <option value="1" class="form__option">depart 1</option>
-                                    <option value="2" class="form__option">depart 2</option>
-                                    <option value="3" class="form__option">depart 3</option>
-                                </select>
-                                <label for="time" class="form__label">Time *</label>
-                                <select name="time" id="time" class="form__input">
-                                    <option value="1" class="form__option">4:00 Available</option>
-                                    <option value="2" class="form__option">12:00 Available</option>
-                                    <option value="3" class="form__option">16:00 Available</option>
-                                </select>
-                                
-                                <input type="submit" class="form__button" value="Book Appointment">
-                            </form>
+                        <div class="row">
+                            <div class="appointment__box">
+                                <div class="appointment__images">
+                                    <img src="./assets/images/111.jpg" alt="#" class="appointment__image">
+                            </div>
+                                <form action="POST" class="appointment__form form">
+                                    <h2 class="form__title form__title_mobile">Get A Free Quote Here</h2>
+                                    <h3 class="form__title">Book appointment</h3>
+                                    <div class="form__box">
+                                        <label for="name" class="form__label">Name *</label>
+                                        <input type="text" id="name" class="form__input" placeholder="Full Name *">
+                                    </div>
+                                    <div class="form__box">
+                                        <label for="email" class="form__label">Email adress *</label>
+                                        <input type="email" id="email" class="form__input" required placeholder="example@gmail.com">
+                                    </div>
+                                    <div class="form__box">
+                                        <label for="depart" class="form__label">Departement *</label>
+                                        <select name="depart" id="depart" class="form__input">
+                                            <option class="form__option">Please Select</option>
+                                            <option value="1" class="form__option">depart 1</option>
+                                            <option value="2" class="form__option">depart 2</option>
+                                            <option value="3" class="form__option">depart 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__box">
+                                        <label for="time" class="form__label">Time *</label>
+                                        <select name="time" id="time" class="form__input">
+                                            <option value="1" class="form__option">4:00 Available</option>
+                                            <option value="2" class="form__option">12:00 Available</option>
+                                            <option value="3" class="form__option">16:00 Available</option>
+                                        </select>
+                                    </div>
+                                    <input type="submit" class="form__button" value="Book Appointment">
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -406,7 +364,7 @@
     </main>
     <footer class="footer">
         <div class="footer__callback callback">
-            <div class="container container__footer">
+            <div class="container">
                 <div class="callback__wrap">
                     <div class="callback__text">
                         <h3 class="callback__title">Consulting Agency For Your Business</h3>
@@ -418,7 +376,7 @@
         </div>
         
         <div class="footer__inner">
-            <div class="container container__footer">
+            <div class="container">
                 <div class="footer__wrap">
                         <div class="footer__categories">
                             <div class="row">
@@ -466,22 +424,22 @@
                                         </ul>
                                     </nav>
                                 </div>
+                                <div class="footer__category contacts">
+                                    <h5 class="contacts__title footer__title">Get In Touch</h5>
+                                    <nav class="contacts__nav footer__nav nav">
+                                        <ul class="nav__menu">
+                                            <li class="nav__item"><a href="tel:+4805550103" class="nav__link nav__tel">(480) 555-0103</a></li>
+                                            <li class="nav__item"><p class="nav__text nav__link nav__adress">4517 Washington Ave.</p></li>
+                                            <li class="nav__item"><a href="mailto:debra.holt@example.com" class="nav__link nav__email">debra.holt@example.com</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
-                        </div>
-                        <div class="footer__contacts contacts">
-                            <h5 class="contacts__title footer__title">Get In Touch</h5>
-                            <nav class="contacts__nav footer__nav nav">
-                                <ul class="nav__menu">
-                                    <li class="nav__item"><a href="tel:+4805550103" class="nav__link contacts__nav nav__tel">(480) 555-0103/a></a></li>
-                                    <li class="nav__item"><p class="nav__text nav__link contacts__nav nav__adress">4517 Washington Ave.</p></li>
-                                    <li class="nav__item"><a href="mailto:debra.holt@example.com" class="nav__link contacts__nav nav__email">debra.holt@example.com</a></li>
-                                </ul>
-                            </nav>
                         </div>
                 </div>
             </div>
         </div>
-        <div class="container container__footer">
+        <div class="container">
             <div class="footer__bottom">
                 <h6 class="footer__copyright">Made With Love By Figmaland All Right Reserved</h6>
                 <ul class="footer__socials">
@@ -493,7 +451,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

@@ -31,12 +31,19 @@ breakpoints: {
     // when window width is >= 480px
     1155: {
     slidesPerView: 3,
-    spaceBetween: 30
+    // spaceBetween: 15
     },
 }
+});
 
-  // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
+
+// header
+let header = document.querySelector(".header");
+
+document.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop > 1) {
+    header.classList.add("header_has-bg");
+  } else {
+    header.classList.remove("header_has-bg");
+  }
 });
