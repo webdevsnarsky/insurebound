@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <title>Insurebond</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/styles/fonts.css">
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/styles.css?ver=17.04.21.01">
 </head>
 <body>
     <header class="header">
@@ -18,6 +18,7 @@
                             <div class="header__logo logo">
                                 <a href="index.html" class="logo__link"><h3 class="logo__text">BrandName</h3></a>
                             </div>
+                            
                             <div class="header__icons icons">
                                 <a href="#" class="icons__link">
                                     <img src="./assets/images/icons/search.svg" alt="search" class="header__search icons">
@@ -30,6 +31,10 @@
                                 </a>
                             </div>
                         </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
                         <nav class="header__nav">
                             <ul class="header__menu">
                                 <li class="header__item"><a href="#" class="header__link">Home</a></li>
@@ -49,13 +54,13 @@
     <main class="main">
         <section class="promo">
             <div class="container">
-                <div class="promo__inner promo">
+                <div class="promo__inner">
                     <h1 class="promo__title">We Ensure A Best Insurance Service</h1>
                     <p class="promo__subtitle">We know how large objects will act, but things on a 
                         small scale just do not act that way.</p>
                         <div class="promo__buttons">
-                            <a href="#" class="promo__button promo__button_active button">Get Quote Now</a>
-                            <a href="#" class="promo__button button">Learn More</a>
+                            <a href="#" class="promo__button promo__button_active">Get Quote Now</a>
+                            <a href="#" class="promo__button">Learn More</a>
                         </div>
                         <div class="promo__benefits benefits">
                             <div class="benefits__wrap row">
@@ -338,20 +343,32 @@
                                     </div>
                                     <div class="form__box">
                                         <label for="depart" class="form__label">Departement *</label>
-                                        <select name="depart" id="depart" class="form__input">
-                                            <option class="form__option">Please Select</option>
-                                            <option value="1" class="form__option">depart 1</option>
-                                            <option value="2" class="form__option">depart 2</option>
-                                            <option value="3" class="form__option">depart 3</option>
-                                        </select>
+                                        <div class="form__dropdown-wrap">
+                                            <button type="button" class="form__input form__dropdown-button">Please Select</button>
+                                            <ul class="form__dropdown-list">
+                                                <li class="form__dropdown-item" data-value="depart-1">depart 1</li>
+                                                <li class="form__dropdown-item" data-value="depart-2">depart 2</li>
+                                                <li class="form__dropdown-item" data-value="depart-3">depart 3</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <div class="form__box">
                                         <label for="time" class="form__label">Time *</label>
-                                        <select name="time" id="time" class="form__input">
-                                            <option value="1" class="form__option">4:00 Available</option>
-                                            <option value="2" class="form__option">12:00 Available</option>
-                                            <option value="3" class="form__option">16:00 Available</option>
-                                        </select>
+                                        <div class="form__input-wrap">
+                                            <div class="form__dropdown-wrap">
+                                                <button type="button" class="form__input form__dropdown-button" id="time-input"></button>
+                                                <ul class="form__dropdown-list">
+                                                    <li class="form__dropdown-item" data-value="time-4">4:00 Available</li>
+                                                    <li class="form__dropdown-item" data-value="time-12">12:00 Available</li>
+                                                    <li class="form__dropdown-item" data-value="time-16">16:00 Available</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__box-checkbox">
+                                        <input class="form__input-checkbox" id="politics" type="checkbox" name="politics">
+                                        <label class="form__input-label form__lavel" for="politics">  I agree with the privacy policy</label>
                                     </div>
                                     <input type="submit" class="form__button" value="Book Appointment">
                                 </form>
