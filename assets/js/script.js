@@ -140,7 +140,7 @@ switchInput.addEventListener('change', () => {
 
 const emailRegEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const telRegEx = /^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$/;
-const formNameEl = document.getElementById('inputName');
+const formNameEl = document.getElementById('name');
 const formEmailEl = document.querySelector('.form__input[type=email]');
 const formTelEl = document.querySelector('.form__input[type=tel]');
 const formInputCheckbox = document.querySelector('.form__input-checkbox');
