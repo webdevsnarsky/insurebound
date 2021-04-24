@@ -38,15 +38,33 @@ document.addEventListener('scroll', () => {
 });
 
 // form select 
-let formDropdownButtons = document.querySelectorAll('.form__dropdown-button');
-let formDropdownLists = document.querySelectorAll('.form__dropdown-list');
-let formDropdownItem = document.querySelectorAll('.form__dropdown-item');
-let timeInput = document.getElementById('time-input');
-let form = document.querySelector('.form');
+const formDropdownButtons = document.querySelectorAll('.form__dropdown-button');
+const formDropdownLists = document.querySelectorAll('.form__dropdown-list');
+const formDropdownItem = document.querySelectorAll('.form__dropdown-item');
+const timeInput = document.getElementById('time-input');
+const form = document.querySelector('.form');
+const switchCheckbox = document.querySelector('.switch__checkbox');
+const formButton = document.querySelector('.form__button');
+const htmlEl = document.querySelector('html');
 
 // слушатель на вставку текста первого элемента списка options в кнопку select при загрузке контента
 
 document.addEventListener('DOMContentLoaded', () => {
+    if (!localStorage.mode) {
+        localStorage.mode = 'light';
+        htmlEl.dataset.mode = 'light';  
+        switchCheckbox.checked = false;
+    } else if (localStorage.mode == 'light') {
+        localStorage.mode = 'light';
+        htmlEl.dataset.mode = 'light';  
+        switchCheckbox.checked = false;
+    } else {
+        localStorage.mode = 'dark';
+        htmlEl.dataset.mode = 'dark';  
+        switchCheckbox.checked = true;
+    }
+    console.log('localStorage.mode: ', localStorage.mode);
+
     timeInput.innerHTML =  timeInput.nextElementSibling.firstElementChild.textContent;
 })
 
@@ -102,63 +120,94 @@ document.addEventListener('keydown', (e) => {
 });
 
 
-
-
-
 // change color theme
 
 let switchInput = document.querySelector('.switch');
 
 switchInput.addEventListener('change', () => {
-    document.documentElement.classList.toggle('dark');
 
-    document.body.classList.toggle('dark');
-
-    document.querySelector('.logo__link').classList.toggle('dark');
-
-    document.querySelectorAll('.header__link').forEach(elem => {
-        elem.classList.toggle('dark');
-    });
-
-    document.querySelectorAll('.benefits__item').forEach(elem => {
-        elem.classList.toggle('dark');
-    });
-
-    document.querySelectorAll('.button').forEach(elem => {
-        elem.classList.toggle('dark');
-    });
-
-    document.querySelectorAll('h2').forEach(elem => {
-        elem.classList.toggle('dark');
-    });
-
-    document.querySelectorAll('h3').forEach(elem => {
-        elem.classList.toggle('dark');
-    });
-
-    document.querySelectorAll('.descr').forEach(elem => {
-        elem.classList.toggle('dark');
-    });
-
-    document.querySelectorAll('.promo__button').forEach(elem => {
-        elem.classList.toggle('dark');
-    });
-
-    document.querySelector('.features').classList.toggle('dark');
-
-    document.querySelector('.tariff-bg').classList.toggle('dark');
-
-    document.querySelectorAll('.tariff__text').forEach(elem => {
-        elem.classList.toggle('dark');
-    });
-
-    document.querySelector('.form').classList.toggle('dark');
-
-    document.querySelectorAll('.form__dropdown-item').forEach(elem => {
-        elem.classList.toggle('dark');
-    });
-
-    document.querySelector('.footer__inner').classList.toggle('dark');
-    document.querySelector('.footer__copyright').classList.toggle('dark');
     
+    
+    if (switchCheckbox.checked == false) {
+        localStorage.mode = 'light';
+        htmlEl.dataset.mode = 'light';
+    } else {
+        localStorage.mode = 'dark';
+        htmlEl.dataset.mode = 'dark';   
+    };
+
+    isDarkMode();
 });
+
+// form validation
+
+const emailRegEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const telRegEx = /^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$/;
+const formNameEl = document.getElementById('inputName');
+const formEmailEl = document.querySelector('.form__input[type=email]');
+const formTelEl = document.querySelector('.form__input[type=tel]');
+const formInputCheckbox = document.querySelector('.form__input-checkbox');
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    isNameCheck();
+    isMailCheck();
+    isTelCheck();
+    isCheckBoxCheck();
+}); 
+
+formNameEl.addEventListener('blur', () => {
+    isNameCheck();
+}); 
+
+formEmailEl.addEventListener('blur', () => {
+    isMailCheck();
+}); 
+
+formTelEl.addEventListener('blur', () => {
+    isTelCheck();
+}); 
+
+function isNameCheck() {
+    if (formNameEl.value.trim().length <= 0) {
+        formNameEl.classList.add('error');
+        formNameEl.nextElementSibling.classList.add('active');
+    } else {
+        formNameEl.classList.remove('error')
+        formNameEl.nextElementSibling.classList.remove('active');
+    } 
+}
+
+function isMailCheck() {
+    let isMailChecked = emailRegEx.test(formEmailEl.value);
+    if  (!isMailChecked) { 
+        formEmailEl.classList.add('error');
+        formEmailEl.nextElementSibling.classList.add('active');
+    } else {
+        formEmailEl.classList.remove('error');
+        formEmailEl.nextElementSibling.classList.remove('active');
+    }
+}
+
+function isTelCheck() {
+    let isTelChecked = telRegEx.test(formTelEl.value);
+    !isTelChecked ?  formTelEl.classList.add('error') : formTelEl.classList.remove('error');
+    
+    if  (!isTelChecked) { 
+        formTelEl.classList.add('error')
+        formTelEl.nextElementSibling.classList.add('active');
+    } else {
+        formTelEl.classList.remove('error')
+        formTelEl.nextElementSibling.classList.remove('active');
+    }
+}
+
+function isCheckBoxCheck() {
+    if (!formInputCheckbox.checked) {
+        formInputCheckbox.nextElementSibling.classList.add('error');
+    } else {
+        formInputCheckbox.nextElementSibling.classList.remove('error');
+    }
+}
