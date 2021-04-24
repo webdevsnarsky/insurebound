@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
         htmlEl.dataset.mode = 'dark';  
         switchCheckbox.checked = true;
     }
-    console.log('localStorage.mode: ', localStorage.mode);
 
     timeInput.innerHTML =  timeInput.nextElementSibling.firstElementChild.textContent;
 })
@@ -135,8 +134,6 @@ switchInput.addEventListener('change', () => {
         localStorage.mode = 'dark';
         htmlEl.dataset.mode = 'dark';   
     };
-
-    isDarkMode();
 });
 
 // form validation
