@@ -50,11 +50,7 @@ const htmlEl = document.querySelector('html');
 // слушатель на вставку текста первого элемента списка options в кнопку select при загрузке контента
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (!localStorage.mode) {
-        localStorage.mode = 'light';
-        htmlEl.dataset.mode = 'light';  
-        switchCheckbox.checked = false;
-    } else if (localStorage.mode == 'light') {
+    if (!localStorage.mode || localStorage.mode === 'light') {
         localStorage.mode = 'light';
         htmlEl.dataset.mode = 'light';  
         switchCheckbox.checked = false;
